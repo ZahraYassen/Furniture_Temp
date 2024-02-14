@@ -73,7 +73,7 @@ a {
   position: absolute;
   content: "";
   background-color: var(--main-color);
-  width: calc(100% + 50px);
+  width: calc(100% + 20px);
   height: calc(100% + 40px);
   left: -7%;
   top: -20px;
@@ -645,14 +645,26 @@ input::placeholder {
 }
 @keyframes loadingBefore {
   0% {
-    transform: translateX(-14px);
-  }
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
   50% {
-    transform: translateX(14px);
-  }
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+}
   100% {
-    transform: translateX(-14px);
-  }
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
 }
 @keyframes loadingAfter {
   0% {
